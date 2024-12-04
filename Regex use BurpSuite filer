@@ -1,0 +1,20 @@
+
+
+BurpSuite Filter : Regex,Casesensitive,Negative
+
+--------Regex:----------
+
+[+] Get Request only: (==)
+
+[+] .js Request only: (&=)
+
+[+] (?i)\b\w*id\b(?!\w)\s*=\s*("[^"]*"|'[^']*'|[^&\s}]*)    (idor finding only use burp suite regex)
+
+[+] (?i)([a-z0-9]+){0,}((_|-){0,}(\\s){0,})(key|pass|credentials|auth|cred|creds|secret|password|access|token|api)(\\s){0,}(=|:|is|>){1,}   (sensitive discovery,id,password,secretkey,token,api) |regex use  
+
+
+
+---------Filter Negative---------
+[+] GET (on click Negative just show post request)
+
+[+] POST (on click negative just show GET Request)
