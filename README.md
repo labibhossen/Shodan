@@ -8,8 +8,11 @@ Shodan.io use all process
 -----Shodan.io Searching Process----------
 
 [+] example.com or 8.8.8.8
+
 [+] port:21 domain:example.com
+
 [+] vuln:"CVE-2023-1234"
+
 [+] http.html:"default password"
 [+] product:apache version:2.4.49
 [+] port:27017 (MongoDB without authentication).
